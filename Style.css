@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo negro y letra verde */
+body {
+  background-color: black;
+  color: #9ad79b;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Header fijo arriba */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #002200;
+  padding: 15px;
+  text-align: center;
+  z-index: 100;
+}
+
+/* Espacio para que el contenido no se tape con el header */
+main {
+  position: relative;
+  margin-top: 90px;
+  height: 300px;
+}
+
+/* Caja de contenido principal */
+.principal {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 60%;
+  background-color: #111;
+  padding: 15px;
+  border: 1px dashed #9ad79b;
+  border-radius: 6px;
+}
+
+/* Sidebar a la derecha */
+.lateral {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 30%;
+  background-color: #111;
+  padding: 15px;
+  border: 1px dashed #9ad79b;
+  border-radius: 6px;
+}
+
+/* Sección de características */
+.caracteristicas {
+  position: relative;
+  margin-top: 120px;
+  text-align: center;
+  padding-bottom: 100px; /* para que no se pegue al footer */
+}
+
+.caja {
+  position: relative;
+  width: 220px;
+  margin: 20px auto;
+  background-color: #111;
+  padding: 15px;
+  border: 1px dashed #9ad79b;
+  border-radius: 6px;
+}
+
+/* Iconos */
+.caja span {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Botones básicos */
+button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #222;
+  color: #9ad79b;
+  border: 1px solid #9ad79b;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer pegado abajo */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #002200;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
